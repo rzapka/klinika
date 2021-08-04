@@ -1,0 +1,27 @@
+.edit {
+    .card-body {
+        div {
+            label {
+                display: block;
+            }
+            input {
+                text-align: center;
+                border: 2px solid gray;
+                border-radius:7px;
+                padding: 0.5% 0;
+                &:focus {
+                    outline: none;
+                }
+                #overture_price_from {
+                    width:5%;
+                }
+            }
+        }
+    }
+}
+div.show {
+    z-index:999;
+}
+#employee_description {
+    min-height:35vh;
+}

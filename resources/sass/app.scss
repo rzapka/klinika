@@ -1,0 +1,25 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,700&family=Titan+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Frijole&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap');
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+@import 'headerNav';
+@import 'footerNav';
+@import 'home';
+@import "employees";
+@import "overtures";
+@import 'siteImage';
+@import 'about';
+@import 'contact';
+@import 'edit';
+@import "messages";

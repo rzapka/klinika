@@ -1,0 +1,62 @@
+.footerNav {
+    background-color: $main-color-light;
+    display: flex;
+    height:30vh;
+    padding-left:10%;
+    ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 100%;
+        width:20%;
+        list-style: none;
+    }
+    .media {
+        width:50%;
+        li  {
+            font-size: 1.3em;
+            @media(max-width:850px) and (orientation: landscape) {
+                font-size: 0.8rem;
+            }
+            @media(max-width:600px) and (orientation: portrait) {
+                font-size: 0.8rem;
+            }
+            @media(max-width:375px) and (orientation: portrait) {
+                font-size: 0.6rem;
+            }
+            i {
+                color:white;
+                margin-top:10%;
+                margin-left:15%;
+            }
+        }
+    }
+}
+.nav-link {
+    @media(max-width:850px) and (orientation: landscape) {
+        font-size: 0.7rem;
+    }
+    @media(max-width:600px) and (orientation: portrait) {
+        font-size: 0.7rem;
+    }
+    @media(max-width:375px) and (orientation: portrait) {
+        font-size: 0.5rem;
+    }
+}
+.footer__h6 {
+    @media (max-width:1400px) and (orientation: landscape) {
+        font-size:18px;
+    }
+    @media (max-width: 1280px) and (orientation: landscape) {
+        font-size:15px;
+    }
+    @media (max-width: 1024px) and (orientation: landscape) {
+        font-size:13px;
+    }
+    @media (max-width: 800px) and (orientation: landscape) {
+        font-size:10px;
+    }
+    @media(max-width:375px) and (orientation: portrait) {
+        font-size: 12px;
+    }
+}

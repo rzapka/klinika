@@ -1,0 +1,52 @@
+.siteImage{
+    height:50vh;
+    @media(max-width:850px) {
+        width:100%;
+    }
+    @media(max-width:1024px) and (orientation: portrait) {
+        height:35vh;
+    }
+    @media(max-width: 440px) and (orientation: portrait) {
+        height:25vh;
+    }
+}
+
+.siteImageOvertures {
+    background: url("../../public/storage/doctor2.jpg") no-repeat center;
+
+}
+.siteImageAbout {
+    background: url("../../public/storage/women4.jpg") no-repeat center;
+}
+.siteImageContact {
+    background: url("../../public/storage/contact.jpg") no-repeat center;
+}
+.siteImageBg {
+    position: relative;
+    z-index: 999;
+    height:100%;
+    background-color: rgba(0,0,0,0.5);
+    h1{
+        position:absolute;
+        font-weight: bold;
+        color:white;
+        @media(max-width: 850px) and (orientation: landscape) {
+            font-size: 2.5rem;
+        }
+    }
+    h1.overtures-h1 {
+        transform: rotate(28deg);
+        top:40%;
+        left:60%;
+    }
+    h1.about-h1 {
+        transform: rotate(-28deg);
+        top:40%;
+        left:10%;
+    }
+    h1.contact-h1 {
+        transform: rotate(-28deg);
+        top:40%;
+        left:70%;
+    }
+}

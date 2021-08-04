@@ -1,0 +1,84 @@
+.categories {
+    list-style: none;
+    width:25%;
+}
+.category {
+    text-transform: capitalize;
+    border-bottom: 1px solid #acb8c6;
+    height:7vh;
+    line-height:7vh;
+    padding: 0 5%;
+    background-color: #992a6a;
+    &:hover {
+        background-color: #b5277a;
+    }
+    @media(max-width: 850px) {
+        padding-top:10%;
+        height:10vh;
+    }
+}
+.category a {
+    display:block;
+    font-size: 1rem;
+    color:white;
+    text-decoration: none;
+    @media(max-width: 850px) and (orientation: landscape) {
+        font-size: 0.7rem;
+    }
+    @media(max-width: 600px) and (orientation: landscape) {
+        font-size: 0.5rem;
+    }
+    @media(max-width: 600px) and (orientation: portrait) {
+        font-size: 0.7rem;
+    }
+}
+.form-control {
+    @media(max-width: 850px) and (orientation: landscape) {
+        font-size: 0.7rem;
+    }
+    @media(max-width: 600px) and (orientation: landscape) {
+        font-size: 0.5rem;
+        width:70% !important;
+    }
+    @media(max-width: 600px) and (orientation: portrait) {
+        font-size: 0.7rem;
+        width:70% !important;
+    }
+}
+.pagination {
+    @media(max-width: 850px) and (orientation: landscape) {
+        font-size: 0.7rem;
+        margin-left:0 !important;
+    }
+    @media(max-width: 600px) and (orientation: landscape) {
+        font-size: 0.5rem;
+        margin-left:-8% !important;
+    }
+    @media (orientation: portrait) {
+        margin-left: 0 !important;
+    }
+    @media(max-width: 600px) and (orientation: portrait) {
+        font-size: 0.7rem;
+        margin-left:-3% !important;
+    }
+}
+
+.table {
+    @media(max-width: 850px) and (orientation: landscape) {
+        font-size: 0.7rem;
+    }
+    @media(max-width: 600px) and (orientation: landscape) {
+        font-size: 0.5rem;
+    }
+    @media(max-width: 600px) and (orientation: portrait) {
+        font-size: 0.7rem;
+    }
+}
+.fa-search {
+    @media(max-width: 600px) and (orientation: landscape) {
+        font-size: 0.5rem;
+    }
+    @media(max-width: 600px) and (orientation: portrait) {
+        font-size: 0.7rem;
+    }
+}

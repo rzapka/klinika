@@ -1,0 +1,71 @@
+.clinic-logo {
+    font-family: 'Titan One', cursive;
+
+    font-size: 1.5rem;
+}
+
+.clinic-logo i  {
+    font-size: 2rem;
+}
+.clinic-logo img {
+    height:5vh;
+}
+
+.navbar {
+    background: $main-color-dark !important;
+    padding: 1% 10%;
+}
+.navbar-nav {
+    font-family: 'RocknRoll One', sans-serif;
+    display: flex;
+    justify-content: space-evenly;
+    width:100%;
+}
+.nav-item {
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hovered {
+    transition:0.2s;
+}
+.nav-link:hover {
+    font-weight: bold;
+}
+
+.clinic-name {
+    color: #efecec !important;
+}
+.clinic-name i {
+    color: white !important;
+}
+.color-span {
+    color: #d9d6d6;
+}
+.admin {
+    margin-left: 10vw;
+    font-weight:bold;
+    color: #999;
+    @media(max-width: 850px) {
+        margin-left: 0 !important;
+    }
+    @media(max-width:600px) and (orientation: landscape) {
+        font-size: 10px;
+    }
+}
+#navbarSupportedContent {
+    margin-left:10vw;
+}
+.nav-link.hovered {
+    @media(max-width: 1024px) {
+        font-size: 12px;
+    }
+    @media(max-width:600px) and (orientation: landscape) {
+        font-size: 10px;
+    }
+}
+
+
+
+

@@ -1,0 +1,173 @@
+.employeesImg {
+    height:30vh;
+    @media(max-width: 800px) and (orientation: landscape) {
+        height:50vh;
+    }
+    @media(orientation: portrait) {
+        height:15vh;
+    }
+    @media(max-width: 800px) and (orientation: portrait) {
+        height:25vh;
+    }
+}
+.employee {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.employee * {
+    margin-top: 3%;
+}
+button.details {
+    color:white;
+    background-color: $main-color-light;
+    &:hover {
+        color:white;
+        background-color: $main-color-dark;
+    }
+    @media (max-width:1400px) and (orientation: landscape) {
+        font-size:16px;
+    }
+    @media (max-width: 1280px) and (orientation: landscape) {
+        font-size:13px;
+    }
+    @media (max-width: 1024px) and (orientation: landscape) {
+        font-size:11px;
+    }
+    @media (max-width: 800px) and (orientation: landscape) {
+        font-size:9px;
+    }
+    @media (max-width: 600px) and (orientation: portrait) {
+        font-size:10px;
+        width:20% !important;
+    }
+    @media (max-width: 440px) and (orientation: portrait) {
+        font-size:8px;
+    }
+    @media (max-width: 320px) and (orientation: portrait) {
+        font-size:6px;
+    }
+}
+.blur {
+    filter: blur(20px);
+}
+.showEmployee {
+    visibility: hidden;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    min-height: 70vh;
+    width:70%;
+    border:2px solid #777;
+    border-radius: 10px;
+    background-color: white;
+    z-index: 999;
+    @media(max-width:1280px) {
+        width:80%;
+    }
+    @media (orientation: portrait) {
+        flex-direction: column;
+    }
+    @media (max-width: 600px) and (orientation: portrait) {
+        max-height:95vh;
+    }
+}
+
+.active {
+    visibility: visible;
+}
+.employeeImg {
+    height: 50vh;
+    @media (orientation: portrait) {
+        height:30vh;
+        margin-bottom: 5%;
+    }
+}
+.employeeDescription {
+    display: flex;
+    flex-direction: column;
+}
+h4.h4 {
+    @media (max-width:1400px) and (orientation: landscape) {
+        font-size:18px;
+    }
+    @media (max-width: 1280px) and (orientation: landscape) {
+        font-size:15px;
+    }
+    @media (max-width: 1024px) and (orientation: landscape) {
+        font-size:13px;
+    }
+    @media (max-width: 800px) and (orientation: landscape) {
+        font-size:11px;
+    }
+    @media (max-width: 600px) and (orientation: portrait) {
+        font-size:10px;
+    }
+    @media (max-width: 320px) and (orientation: portrait) {
+        font-size:8px;
+    }
+}
+h5.h5 {
+    @media (max-width:1400px) and (orientation: landscape) {
+        font-size:16px;
+    }
+    @media (max-width: 1280px) and (orientation: landscape) {
+        font-size:13px;
+    }
+    @media (max-width: 1024px) and (orientation: landscape) {
+        font-size:11px;
+    }
+    @media (max-width: 800px) and (orientation: landscape) {
+        font-size:9px;
+    }
+    @media (max-width: 600px) and (orientation: portrait) {
+        font-size:10px;
+    }
+    @media (max-width: 320px) and (orientation: portrait) {
+        font-size:8px;
+    }
+}
+p.description {
+    height: 90%;
+    @media (max-width: 1280px) and (orientation: landscape) {
+        font-size:12px;
+    }
+    @media (max-width: 1024px) and (orientation: landscape) {
+        font-size:10px;
+    }
+    @media (max-width: 800px) and (orientation: landscape) {
+        font-size:8px;
+    }
+    @media (max-width: 600px) and (orientation: landscape) {
+        font-size:6px;
+    }
+    @media (max-width: 600px) and (orientation: portrait) {
+        font-size:10px;
+    }
+    @media (max-width: 440px) and (orientation: portrait) {
+        font-size:8px;
+    }
+    @media (max-width: 320px) and (orientation: portrait) {
+        font-size:6px;
+    }
+}
+.em__name {
+    @media (max-width: 600px) and (orientation: portrait) {
+        font-size:18px;
+    }
+    @media (max-width: 440px) and (orientation: portrait) {
+        font-size:15px;
+    }
+}
+.em__specialization {
+    @media (max-width: 600px) and (orientation: portrait) {
+        font-size:16px;
+    }
+    @media (max-width: 440px) and (orientation: portrait) {
+        font-size:13px;
+    }
+}
