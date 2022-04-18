@@ -31,12 +31,12 @@
                             <div>
                                 <label for="employee_name">Imię: </label>
                                 <input type="text" id="employee_name" class="mb-4 form-control w-50 mx-auto"
-                                        name="name">
+                                        name="firstname">
                             </div>
                             <div>
                                 <label for="employee_lastname">Nazwisko: </label>
                                 <input type="text" id="employee_lastname" class="mb-4 form-control w-50 mx-auto"
-                                        name="surname">
+                                        name="lastname">
                             </div>
                             <div>
                                 <label for="employee_specialization">Specjalizacja: </label>

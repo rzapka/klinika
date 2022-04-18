@@ -22,7 +22,7 @@
                 </span>
                 <span class="ml-1">od
                 <span class="ml-1 font-weight-bold">
-                    {{ ucfirst($message->name) }} {{ ucfirst($message->surname) }} ({{ $message->email }})
+                    {{ ucfirst($message->firstname) }} {{ ucfirst($message->lastname) }} ({{ $message->email }})
                 </span>
             </div>
             <div class="card-body">

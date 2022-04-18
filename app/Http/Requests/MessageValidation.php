@@ -24,8 +24,8 @@ class MessageValidation extends FormRequest
     public function rules()
     {
         return [
-            'name' => 'required|string|min:2',
-            'surname' => 'required|string|min:2',
+            'firstname' => 'required|string|min:2',
+            'lastname' => 'required|string|min:2',
             'email' => 'required|email',
             'topic' => 'required|min:2',
             'description' => 'required|min:10',
@@ -35,15 +35,15 @@ class MessageValidation extends FormRequest
     public function messages()
     {
         return [
-            'name.required' => 'Pole imię jest wymagane',
-            'surname.required' => 'Pole nazwisko jest wymagane',
+            'firstname.required' => 'Pole imię jest wymagane',
+            'lastname.required' => 'Pole nazwisko jest wymagane',
             'email.required' => 'Pole email jest wymagane',
             'topic.required' => 'Pole temat jest wymagane',
             'description.required' => 'Pole opis jest wymagane',
-            'name.string' => 'Pole imie musi byc typu tekstowego',
-            'name.min' => 'Imie jest zbyt krótkie.',
-            'surname.string' => 'Pole nazwisko musi byc typu tekstowego',
-            'surname.min' => 'Nazwisko jest zbyt krótkie.',
+            'firstname.string' => 'Pole imie musi byc typu tekstowego',
+            'firstname.min' => 'Imie jest zbyt krótkie.',
+            'lastname.string' => 'Pole nazwisko musi byc typu tekstowego',
+            'lastname.min' => 'Nazwisko jest zbyt krótkie.',
             'email.email' => 'Podany e-mail jest nieprawidłowy.',
             'topic.min' => 'Pole temat posiada zbyt mało znaków.',
             'description.min' => 'Pole opis posiada zbyt mało znaków.',

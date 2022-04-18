@@ -19,10 +19,10 @@ class EmployeesSeeder extends Seeder
 
         $faker = Factory::create();
 
-        foreach($this->data() as [$name, $surname, $specialization, $description, $email, $image]) {
+        foreach($this->data() as [$firstname, $lastname, $specialization, $description, $email, $image]) {
             $employee = new Employee([
-                'name' => $name,
-                'surname' => $surname,
+                'firstname' => $firstname,
+                'lastname' => $lastname,
                 'specialization' => $specialization,
                 'description' => $description,
                 'phone_num' => $faker->numberBetween(100000000, 999999999),

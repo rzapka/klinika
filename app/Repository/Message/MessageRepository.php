@@ -12,8 +12,8 @@ class MessageRepository implements \App\Repository\MessageRepository
     {
         $data = $request->validated();
         $message = new \App\Models\Message([
-            'name' => trim($data['name']) ?? '',
-            'surname' => trim($data['surname']) ?? '',
+            'firstname' => trim($data['firstname']) ?? '',
+            'lastname' => trim($data['lastname']) ?? '',
             'email' => trim($data['email']) ?? '',
             'topic' => trim($data['topic']) ?? '',
             'description' => trim($data['description']) ?? '',

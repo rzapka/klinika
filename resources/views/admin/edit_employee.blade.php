@@ -35,7 +35,11 @@
                     @csrf
                     @method('patch')
                     <div class="employee_photo col-6 my-auto">
-                        <img src='{{ asset("storage/$employee->image") }}' alt="" class="employeeImg">
+                      @if($employee->image)
+                            <img  src ='{{ asset("storage/$employee->image") }}' alt="" class="employeeImg">
+                        @else
+                              <img  src ='{{ asset("storage/doctors/default.png") }}' alt="" class="employeeImg">
+                          @endif
                         <label class="mt-2" for="employee_photo">Zdjęcie:  </label>
                         <input type="file" id="employee_photo" class="mb-4 form-control-file w-75 mx-auto" name="image">
                     </div>
@@ -43,12 +47,12 @@
                     <div>
                         <label for="employee_name">Imię: </label>
                         <input type="text" id="employee_name" class="mb-4 form-control w-75 mx-auto"
-                               value="{{ old('imie') ?? $employee->name }}" name="name">
+                               value="{{ old('firstname') ?? $employee->firstname }}" name="firstname">
                     </div>
                     <div>
                         <label for="employee_lastname">Nazwisko: </label>
                         <input type="text" id="employee_lastname" class="mb-4 form-control w-75 mx-auto"
-                               value="{{ old('surname') ?? $employee->surname  }}" name="surname">
+                               value="{{ old('lastname') ?? $employee->lastname  }}" name="lastname">
                     </div>
                     <div>
                         <label for="employee_specialization">Specjalizacja: </label>

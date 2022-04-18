@@ -28,8 +28,8 @@ class EmployeeRepository implements EmployeeRepositoryInterface
     public function store(array $data)
     {
         $employee = new Employee();
-        $employee->name = trim($data['name']);
-        $employee->surname = trim($data['surname']);
+        $employee->firstname = trim($data['firstname']);
+        $employee->lastname = trim($data['lastname']);
         $employee->specialization = trim($data['specialization']);
         $employee->phone_num = trim($data['phone_num']);
         $employee->email = trim($data['email']);
@@ -50,8 +50,8 @@ class EmployeeRepository implements EmployeeRepositoryInterface
     public function update(array $data, int $id)
     {
         $employee = $this->employee->find($id);
-        $employee->name = trim($data['name']) ?? $employee->imie;
-        $employee->surname = trim($data['surname']) ?? $employee->nazwisko;
+        $employee->firstname = trim($data['firstname']) ?? $employee->imie;
+        $employee->lastname = trim($data['lastname']) ?? $employee->nazwisko;
         $employee->specialization = trim($data['specialization']) ?? $employee->specjalizacja;
         $employee->phone_num = trim($data['phone_num']) ?? $employee->nr_telefonu;
         $employee->email = trim($data['email']) ?? $employee->email;
@@ -61,8 +61,9 @@ class EmployeeRepository implements EmployeeRepositoryInterface
         $path = null;
         if (!empty($data['image'])) {
             $path = $data['image']->store('doctors', 'public');
+            $employee->image = $path ?? $employee->zdjecie;
         }
-       $employee->image = $path ?? $employee->zdjecie;
+
         $employee->save();
     }
 

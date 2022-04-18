@@ -6,7 +6,7 @@ buttons.forEach(button => button.addEventListener('click', () => {
     axios.get(`/pracownik/${button.getAttribute('index')}`)
         .then((resp) => {
         document.querySelector('.employeeImg').src = `../storage/${resp.data.image}`
-        document.querySelector('.name').textContent =  "dr " + resp.data.name + " " + resp.data.surname
+        document.querySelector('.name').textContent =  "dr " + resp.data.name + " " + resp.data.lastname
         document.querySelector('.phone').textContent = "nr telefonu: "  + resp.data.phone_num
         document.querySelector('.email').textContent = "adres e-mail: " + resp.data.email
         document.querySelector('.description').textContent = resp.data.description

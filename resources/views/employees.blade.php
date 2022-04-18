@@ -19,8 +19,12 @@
                 <div class="col-md-4 employee mt-4">
                     @if(Auth::check())<a href="{{ route('edit.employee', ['id' => $employee->id]) }}"
                                    class="btn btn-primary mt-5">Edytuj</a>@endif
-                    <img src='{{ asset("storage/$employee->image") }}' class="employeesImg" alt="">
-                    <h4 class="em__name text-center">dr {{ $employee->name }} {{ $employee->surname }}</h4>
+                        @if($employee->image)
+                            <img  src ='{{ asset("storage/$employee->image") }}' alt="" class="employeesImg">
+                        @else
+                            <img  src ='{{ asset("storage/doctors/default.png") }}' alt="" class="employeesImg">
+                        @endif
+                    <h4 class="em__name text-center">dr {{ $employee->firstname }} {{ $employee->lastname }}</h4>
                     <h5 class="em__specialization text-center">{{ $employee->specialization }}</h5>
                     <button class="btn details" index="{{ $employee->id }}">Więcej</button>
                 </div>

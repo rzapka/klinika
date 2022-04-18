@@ -10,7 +10,7 @@ class Message extends Model
     use HasFactory;
 
     protected $fillable = [
-        'name','surname','email','topic','description', 'post_data',
+        'firstname','lastname','email','topic','description', 'post_data',
     ];
     public $timestamps = false;
 }

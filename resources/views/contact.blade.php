@@ -31,12 +31,12 @@
             <div class="form-row">
                 <div class="col-md-4 mb-3">
                     <label for="contactName">Imię</label>
-                    <input type="text" class="form-control" id="contactName" name="name" placeholder="np. Jan" required>
+                    <input type="text" class="form-control" id="contactName" name="firstname" placeholder="np. Jan" required>
                 </div>
                 <div class="col-md-4 mb-3">
-                    <label for="contactSurname">Nazwisko</label>
+                    <label for="contactLastname">Nazwisko</label>
                     <input type="text"
-                           name="surname" class="form-control" id="contactSurname" placeholder="np. Kowalski"  required>
+                           name="lastname" class="form-control" id="contactLastname" placeholder="np. Kowalski"  required>
                 </div>
                 <div class="col-md-4 mb-3">
                     <label for="contactEmail">E-mail</label>

@@ -14,7 +14,7 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        $this->reset_db();
+//        $this->reset_db();
         $this->call(CategoriesSeeder::class);
         $this->call(OverturesSeeder::class);
         $this->call(EmployeesSeeder::class);
